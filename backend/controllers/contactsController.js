@@ -9,7 +9,7 @@ const getContacts = async (req, res, next) => {
     const result = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .collection('contact')
     .find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -26,7 +26,7 @@ const getContactByiD = async (req, res, next) => {
     const result = await mongodb
     .getDb()
     .db()
-    .collection('contacts')
+    .collection('contact')
     .findOne({ _id: new ObjectId(contactId) });
 
     if (!result) {
