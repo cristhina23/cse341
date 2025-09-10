@@ -1,1 +1,10 @@
-GET https://example.com/comments/1 HTTP/1.1
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
