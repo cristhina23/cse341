@@ -1,8 +1,8 @@
 const contactSchema = new mongoose.Schema({
-  firstname: String,
-  lastname: String,
+  firstName: String,
+  lastName: String,
   email: String,
-  favorite: String,
+  favoriteColor: String,
   birthday: String
 });
 

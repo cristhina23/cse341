@@ -2,7 +2,6 @@ const express = require('express');
 const routes = express.Router();
 const contactsController = require('../controllers/contactsController');
 
-// 🟢 Get all contacts
 routes.get(
   '/',
   /* #swagger.tags = ['Contacts']
@@ -10,7 +9,6 @@ routes.get(
   contactsController.getContacts
 );
 
-// 🟢 Get a contact by ID
 routes.get(
   '/:id',
   /* #swagger.tags = ['Contacts']
@@ -18,7 +16,6 @@ routes.get(
   contactsController.getContactByiD
 );
 
-// 🟢 Create a new contact
 routes.post(
   '/',
   /* #swagger.tags = ['Contacts']
@@ -38,7 +35,6 @@ routes.post(
   contactsController.createContact
 );
 
-// 🟢 Update a contact
 routes.put(
   '/:id',
   /* #swagger.tags = ['Contacts']
@@ -46,7 +42,7 @@ routes.put(
   contactsController.updateContact
 );
 
-// 🟢 Delete a contact
+
 routes.delete(
   '/:id',
   /* #swagger.tags = ['Contacts']

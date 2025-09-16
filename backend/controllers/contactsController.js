@@ -48,10 +48,10 @@ const createContact = async (req, res, next) => {
   try {
     const contact = req.body;
     const newContact = {
-      firstname: contact.firstname,
-      lastname: contact.lastname,
+      firstName: contact.firstName,
+      lastName: contact.lastName,
       email: contact.email,
-      favorite: contact.favorite,
+      favoriteColor: contact.favoriteColor,
       birthday: contact.birthday,
     };
     const result = await 
@@ -76,10 +76,10 @@ const updateContact = async (req, res, next) => {
     }
    
     const newContact = {
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
-      favorite: req.body.favorite,
+      favoriteColor: req.body.favoriteColor,
       birthday: req.body.birthday,
     };
     const result = await mongodb
